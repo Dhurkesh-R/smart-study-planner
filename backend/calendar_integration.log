@@ -1,0 +1,447 @@
+2025-05-06 04:13:20,073 - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-06 04:13:20,073 - INFO - NumExpr defaulting to 8 threads.
+2025-05-06 04:13:20,678 - WARNING -  * Debugger is active!
+2025-05-06 04:13:20,686 - INFO -  * Debugger PIN: 604-963-207
+2025-05-06 04:13:47,203 - INFO - 127.0.0.1 - - [06/May/2025 04:13:47] "OPTIONS /schedule-session HTTP/1.1" 200 -
+2025-05-06 04:13:47,470 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 32, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:13:47,471 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 32, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 44, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:13:47,472 - INFO - 127.0.0.1 - - [06/May/2025 04:13:47] "POST /schedule-session HTTP/1.1" 200 -
+2025-05-06 04:14:16,937 - INFO - 127.0.0.1 - - [06/May/2025 04:14:16] "OPTIONS /schedule-session HTTP/1.1" 200 -
+2025-05-06 04:14:17,242 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 32, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:14:17,242 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 32, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 44, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:14:17,243 - INFO - 127.0.0.1 - - [06/May/2025 04:14:17] "POST /schedule-session HTTP/1.1" 200 -
+2025-05-06 04:14:18,664 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 32, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:14:18,664 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 32, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 44, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:14:18,665 - INFO - 127.0.0.1 - - [06/May/2025 04:14:18] "POST /schedule-session HTTP/1.1" 200 -
+2025-05-06 04:15:06,662 - INFO -  * Detected change in 'C:\\Users\\Dhurkesh\\anaconda3\\Lib\\logging\\__init__.py', reloading
+2025-05-06 04:15:08,666 - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-06 04:15:08,666 - INFO - NumExpr defaulting to 8 threads.
+2025-05-06 04:15:09,282 - WARNING -  * Debugger is active!
+2025-05-06 04:15:09,290 - INFO -  * Debugger PIN: 604-963-207
+2025-05-06 04:16:04,214 - INFO -  * Detected change in 'D:\\ML learner\\Machine learning Projects\\Smart Study Planner\\backend\\calendar_sync.py', reloading
+2025-05-06 04:16:04,214 - INFO -  * Detected change in 'D:\\ML learner\\Machine learning Projects\\Smart Study Planner\\backend\\calendar_sync.py', reloading
+2025-05-06 04:16:04,214 - INFO -  * Detected change in 'D:\\ML learner\\Machine learning Projects\\Smart Study Planner\\backend\\calendar_sync.py', reloading
+2025-05-06 04:16:13,984 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:16:13,985 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:16:14,783 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:16:14,784 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:16:15,437 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:16:15,438 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:16:15,654 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:16:15,655 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:16:26,286 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:16:26,287 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:19:47,529 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:19:47,530 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:19:47,771 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:19:47,771 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:19:48,267 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:19:48,268 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:19:48,535 - ERROR - Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+2025-05-06 04:19:48,536 - ERROR - Failed to create event: Google authentication failed: Client secrets must be for a web or installed app.
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 201, in from_client_secrets_file
+    return cls.from_client_config(client_config, scopes=scopes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\google_auth_oauthlib\flow.py", line 159, in from_client_config
+    raise ValueError("Client secrets must be for a web or installed app.")
+ValueError: Client secrets must be for a web or installed app.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: Client secrets must be for a web or installed app.
+2025-05-06 04:33:58,368 - INFO - Completed new OAuth2 flow.
+2025-05-06 04:33:58,369 - INFO - Saved new credentials to token.json.
+2025-05-06 04:33:59,320 - ERROR - Google Calendar API error: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 83, in create_study_event
+    created_event = service.events().insert(calendarId='primary', body=event).execute()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2025-05-06 04:34:45,287 - INFO - Loaded credentials from token.json.
+2025-05-06 04:34:46,298 - ERROR - Google Calendar API error: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 83, in create_study_event
+    created_event = service.events().insert(calendarId='primary', body=event).execute()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2025-05-06 04:38:33,095 - INFO - Completed new OAuth2 flow.
+2025-05-06 04:38:33,096 - INFO - Saved new credentials to ../integrations/token.json.
+2025-05-06 04:38:33,991 - ERROR - Google Calendar API error: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Smart Study Planner\backend\calendar_sync.py", line 83, in create_study_event
+    created_event = service.events().insert(calendarId='primary', body=event).execute()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dhurkesh\anaconda3\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 348159113529 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=348159113529 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2025-05-06 04:43:26,734 - INFO - Loaded credentials from ../integrations/token.json.
+2025-05-06 04:43:27,992 - INFO - Successfully created event for Chemistry at 2025-05-07T04:43.
+2025-05-06 04:43:28,255 - INFO - Loaded credentials from ../integrations/token.json.
+2025-05-06 04:43:29,475 - INFO - Successfully created event for Chemistry at 2025-05-07T04:43.
+2025-05-07 03:09:28,465 - INFO - Loaded credentials from ../integrations/token.json.
+2025-05-07 03:09:28,951 - INFO - Refreshed expired credentials.
+2025-05-07 03:09:28,951 - INFO - Saved new credentials to ../integrations/token.json.
+2025-05-07 03:09:30,159 - INFO - Successfully created event for Chemistry at 2025-05-23T03:09.
