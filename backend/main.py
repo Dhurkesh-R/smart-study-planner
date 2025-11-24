@@ -3,7 +3,7 @@ from flask_cors import CORS
 import numpy as np
 import joblib
 from scheduler import calculate_next_interval
-from quiz_generator import generate_quiz_question
+from quiz_generator import QuizGenerator
 from calendar_sync import create_study_event
 from utils import (
     validate_input_keys,
@@ -88,7 +88,7 @@ def generate_quiz():
     if not topic:
         return jsonify({"error": "Topic required"}), 400
 
-    question = generate_quiz_question(topic)
+    question = QuizGenerator().generate_quiz_question(topic)
     return jsonify({
         "question": question,
         "timestamp": iso_datetime_now()

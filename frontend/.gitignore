@@ -31,3 +31,4 @@ dist-ssr
 # Google Cloud
 backend/token.json
 integrations/token.json
+integrations/credentials.json

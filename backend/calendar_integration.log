@@ -445,3 +445,35 @@ googleapiclient.errors.HttpError: <HttpError 403 when requesting https://www.goo
 2025-05-07 03:09:28,951 - INFO - Refreshed expired credentials.
 2025-05-07 03:09:28,951 - INFO - Saved new credentials to ../integrations/token.json.
 2025-05-07 03:09:30,159 - INFO - Successfully created event for Chemistry at 2025-05-23T03:09.
+2025-05-08 09:25:12,417 - ERROR - Google authentication failed: [Errno 2] No such file or directory: '../integrations/credentials.json'
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Own projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+        '../integrations/credentials.json', SCOPES
+    )
+  File "C:\Users\Dhurkesh\AppData\Local\Programs\Python\Python313\Lib\site-packages\google_auth_oauthlib\flow.py", line 198, in from_client_secrets_file
+    with open(client_secrets_file, "r") as json_file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../integrations/credentials.json'
+2025-05-08 09:25:12,420 - ERROR - Failed to create event: Google authentication failed: [Errno 2] No such file or directory: '../integrations/credentials.json'
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Own projects\Smart Study Planner\backend\calendar_sync.py", line 42, in authenticate_google
+    flow = InstalledAppFlow.from_client_secrets_file(
+        '../integrations/credentials.json', SCOPES
+    )
+  File "C:\Users\Dhurkesh\AppData\Local\Programs\Python\Python313\Lib\site-packages\google_auth_oauthlib\flow.py", line 198, in from_client_secrets_file
+    with open(client_secrets_file, "r") as json_file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../integrations/credentials.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ML learner\Machine learning Projects\Own projects\Smart Study Planner\backend\calendar_sync.py", line 64, in create_study_event
+    creds = authenticate_google()
+  File "D:\ML learner\Machine learning Projects\Own projects\Smart Study Planner\backend\calendar_sync.py", line 54, in authenticate_google
+    raise RuntimeError(f"Google authentication failed: {e}")
+RuntimeError: Google authentication failed: [Errno 2] No such file or directory: '../integrations/credentials.json'
+2025-05-08 09:27:50,104 - INFO - Completed new OAuth2 flow.
+2025-05-08 09:27:50,105 - INFO - Saved new credentials to ../integrations/token.json.
+2025-05-08 09:27:51,597 - INFO - Successfully created event for Chemistry at 2025-05-15T09:27.
